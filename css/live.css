@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+body{
+  background-color:#171717;
+  color:#fff;
+  font-family: YakuHanJPs,'M PLUS 1p',-apple-system,BlinkMacSystemFont,Gothic ProN,"遊ゴジック",YuGothic,'ヒラギノ角ゴ ProN W3',Hiragino KaKu Gothic ProN,Arial,'メイリオ',Meiryo,sans-serif;
+  font-size: 13.5px;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+/* ーーーーーheaderーーーーー */
+
+.header-nav{
+  display: flex;
+  width: 100%;
+  height: 90px;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #171717;
+  justify-content: flex-end;
+}
+
+.header-top-logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 90px;
+}
+
+.header-nav-ul{
+  display: flex;
+  align-items: center;
+  margin-left: 160px;
+  height: 90px;
+  width: auto;
+}
+
+.header-nav-item{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-nav-item li{
+  margin-right: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1px;
+}
+
+.header-li-place{
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  margin-bottom: 2px;
+}
+
+.header-nav-li:hover{
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  margin-bottom: 2px;
+}
+
+.header-sns{
+  display: flex;
+  align-items: center;
+  margin-left: 37px;
+}
+
+.header-sns-logo{
+  margin-right: 24px;
+}
+
+.header-sns img{
+  width: 19px;
+  height: auto;
+}
+
+/* ーーーーー--listーーーーー */
+
+h1{
+  font-size: 49px;
+  font-weight: 400;
+  padding-top: 190px;
+  margin: 0 0 10px 192.5px ;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.live-main{
+  width: calc(100% - 400px);
+  margin: 0 auto;
+}
+
+.live-list{
+  list-style: none;
+}
+
+.live-list-item{
+  padding: 48px 50px 45px 0;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.live-list-date{
+  font-size: 15px;
+  color: #5d5d5d;
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.live-list-title{
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+.live-list-more{
+  font-size: 13.5px;
+  margin: 35px auto 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 36px;
+}
+
+/* ーーーーー1080ーーーーー */
+
+@media(max-width:1080px){
+
+  .header-nav-item li{
+    font-size: 12px;
+    margin-right: 15px;
+  }
+
+  .header-sns{
+    margin-left: 25px;
+  }
+
+  .header-sns img{
+    width: 15px;
+  }
+
+  .header-sns-logo{
+    margin-right: 15px;
+  }
+
+}
+
+/* ーーーーーspーーーーー */
+
+@media(max-width:900px){
+
+  h1{
+    padding-top: 108px;
+    margin: 0 auto ;
+    width: 85%;
+    max-width: 654px;
+    font-size: clamp(27px, 9.067vw, 46px);
+  }
+  
+  
+  .live-main{
+    width: 85%;
+   max-width: 638px;
+  }
+
+}

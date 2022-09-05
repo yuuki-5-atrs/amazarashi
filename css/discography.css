@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+body{
+  background-color:#171717;
+  color:#fff;
+  font-family: YakuHanJPs,'M PLUS 1p',-apple-system,BlinkMacSystemFont,Gothic ProN,"遊ゴジック",YuGothic,'ヒラギノ角ゴ ProN W3',Hiragino KaKu Gothic ProN,Arial,'メイリオ',Meiryo,sans-serif;
+  font-size: 13.5px;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+/* ーーーーーheaderーーーーー */
+
+header{
+  width: 100%;
+}
+
+.header-nav{
+  display: flex;
+  width: 100%;
+  height: 90px;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #171717;
+  justify-content: flex-end;
+}
+
+.header-top-logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 90px;
+}
+
+.header-nav-ul{
+  display: flex;
+  align-items: center;
+  margin-left: 160px;
+  height: 90px;
+  width: auto;
+}
+
+.header-nav-item{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-nav-item li{
+  margin-right: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1px;
+}
+
+.header-li-place{
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  margin-bottom: 2px;
+}
+
+.header-nav-li:hover{
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  margin-bottom: 2px;
+}
+
+.header-sns{
+  display: flex;
+  align-items: center;
+  margin-left: 37px;
+}
+
+.header-sns-logo{
+  margin-right: 24px;
+}
+
+.header-sns img{
+  width: 19px;
+  height: auto;
+}
+
+/* ーーーーーーnavーーーーー */
+
+h1{
+  font-size: 49px;
+  font-weight: 400;
+  padding-top: 190px;
+  margin: 0 0 10px 192.5px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.discography-nav-main{
+  margin: 61px auto 55px;
+  width: calc(100% - 400px);
+  max-width: 1200px;
+}
+
+.discography-nav-main ul{
+  padding: 0;
+}
+
+.discography-nav{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.discography-nav-category{
+  position: relative;
+  width: 20%;
+  font-family: 'Monserrat',sans-serif;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: normal;
+}
+
+.discography-nav-link{
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.discography-nav-text{
+  padding: 6px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.discography-nav-category::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #5b5b5b;
+  width: 1px;
+  height: 100%;
+}
+
+.discography-nav-category-end::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #5b5b5b;
+  width: 1px;
+  height: 100%;
+}
+
+/* ーーーーーmainーーーーー */
+
+.discography-main{
+  margin: 0 auto;
+  width: 87.5%;
+}
+
+.discography-grid{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #5b5b5b;
+  padding-bottom: 46px;
+  width: 100%;
+}
+
+.discography-link{
+  margin: 0 3.6% 2% 0;
+  width: 22.3%;
+  height: auto;
+  text-decoration: none;
+  color: #fff;
+}
+
+.discography-link:nth-child(4n){
+  margin: 0 0 2% 0;
+  width: 22.3%;
+  height: auto;
+  text-decoration: none;
+  color: #fff;
+}
+
+.discography-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #272727;
+}
+
+.discography-img:before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.discography-img img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  object-fit: contain;
+  transform: translate(-50%,-50%);
+}
+
+.discography-text{
+  display: flex;
+  flex-direction: column-reverse;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.discography-item-date{
+  color: #5b5b5b;
+  font-size: 13px;
+  letter-spacing: normal;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.discography-item-title{
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: 'Montserrat', sans-serif;
+  margin: 13px 0 0;
+} 
+
+.discography-more{
+  font-size: 13.5px;
+  margin: 35px auto 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.discography-nav-sp-category{
+  display: none;
+}
+
+.discography-nav-sp-arrrow{
+  display: none;
+}
+
+/* ーーーーー1080ーーーーー */
+
+@media(max-width:1080px){
+
+  .footer-sp ul{
+    padding-left: 0;
+  }
+
+  .header-nav-item li{
+    font-size: 12px;
+    margin-right: 15px;
+  }
+
+  .header-sns{
+    margin-left: 25px;
+  }
+
+  .header-sns img{
+    width: 15px;
+  }
+
+  .header-sns-logo{
+    margin-right: 15px;
+  }
+
+}
+
+@media(max-width:900px){
+
+  .discography-nav-main{
+    width: 100%;
+  }
+
+  h1{
+    padding-top: 103px;
+    margin: 0 auto 43px;
+    width: 87.2%;
+    max-width: 654px;
+  }
+
+  .discography-nav-sp{
+    width: 100%;
+    height: 80px;
+    position: relative;
+  }
+
+  .discography-nav-sp-category{
+    width: 100%;
+    border-top: 1px solid #5b5b5b;
+    border-bottom: 1px solid #5b5b5b;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Montserrat', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    left: 0;
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+  }
+
+  .discography-nav-sp-arrrow{
+    border-left: 1px solid #5b5b5b;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .discography-nav-main{
+    display: none;
+  }
+
+  .display-main{
+    width: 100%;
+    margin: 0;
+  }
+
+  .discography-link{
+    margin: 10% 0 0 ;
+    width: 100%;
+  }
+
+  .discography-link:nth-child(4n){
+    margin: 10% 0 0 ;
+    width: 100%;
+  }
+
+  .discography-img{
+    margin: 0 auto;
+    width: 85%;
+    max-width: 638px;
+    padding: 20px 0 20px;
+  }
+
+  .discography-item-date{
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .discography-item-title{
+    margin: 13px auto;
+    width: 85%;
+  } 
+
+
+  
+}

@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+body{
+  background-color:#171717;
+  color:#fff;
+  font-family: YakuHanJPs,'M PLUS 1p',-apple-system,BlinkMacSystemFont,Gothic ProN,"遊ゴジック",YuGothic,'ヒラギノ角ゴ ProN W3',Hiragino KaKu Gothic ProN,Arial,'メイリオ',Meiryo,sans-serif;
+  font-size: 13.5px;
+  line-height: 1.35;
+}
+
+/* ーーーーーheaderーーーーー */
+
+.header-nav{
+  display: flex;
+  width: 100%;
+  height: 90px;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #171717;
+  justify-content: flex-end;
+}
+
+.header-top-logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 90px;
+}
+
+.header-nav-ul{
+  display: flex;
+  align-items: center;
+  margin-left: 160px;
+  height: 90px;
+  width: auto;
+}
+
+.header-nav-item{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-nav-item li{
+  margin-right: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1px;
+}
+
+.header-li-place{
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  margin-bottom: 2px;
+}
+
+.header-nav-li:hover{
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  margin-bottom: 2px;
+}
+
+.header-sns{
+  display: flex;
+  align-items: center;
+  margin-left: 37px;
+}
+
+.header-sns-logo{
+  margin-right: 24px;
+}
+
+.header-sns img{
+  width: 19px;
+  height: auto;
+}
+
+/* ーーーーーmainーーーーー */
+
+main{
+  padding-top: 90px;
+  padding-bottom: 36px;
+}
+
+h1{
+  font-size: 49px;
+  font-weight: 400;
+  padding-top: 100px;
+  margin: 0 0 60px 192.5px ;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.link-main{
+  width: calc(100% - 400px);
+  margin: 0 auto;
+}
+
+ul{
+  list-style: none;
+}
+
+.link-link{
+  text-decoration: none;
+}
+
+.link-item{
+  padding: 45px 0 47px;
+  border-bottom: 1px solid #5b5b5b;
+}
+
+.link-item-top-border{
+  border-top: 1px solid #5b5b5b;
+}
+
+h2{
+  font-size: 24px;
+  color: #fff;
+  font-family:'M PLUS 1p', sans-serif;
+  font-weight: 400;
+}
+
+.p-link{
+  margin-top: 11px;
+  font-size: 15px;
+  color: #5b5b5b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ーーーーー1080ーーーーー */
+
+@media(max-width:1080px){
+
+  .header-nav-item li{
+    font-size: 12px;
+    margin-right: 15px;
+  }
+
+  .header-sns{
+    margin-left: 25px;
+  }
+
+  .header-sns img{
+    width: 15px;
+  }
+
+  .header-sns-logo{
+    margin-right: 15px;
+  }
+
+}
+
+@media(max-width:900px){
+
+  main{
+    padding-top: 60px;
+  }
+
+  h1{
+    font-size: clamp(27px, 9.067vw, 46px);
+    padding-top: 43px;
+    margin: 0 auto 40px;
+    width: 85%;
+    max-width: 654px;
+  }
+  
+  
+  .link-main{
+    width: 85%;
+   max-width: 638px;
+  }
+
+  h2{
+    font-size: 17px;
+  }
+
+  .p-link{
+    margin-top: 7px;
+    font-size: 15px;
+  }
+  
+
+}

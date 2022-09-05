@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+  background-color:#fff;
+  color:#fff;
+  font-family: YakuHanJPs,'M PLUS 1p',-apple-system,BlinkMacSystemFont,Gothic ProN,"遊ゴジック",YuGothic,'ヒラギノ角ゴ ProN W3',Hiragino KaKu Gothic ProN,Arial,'メイリオ',Meiryo,sans-serif;
+  font-size: 13.5px;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+.square-image{
+  display: block;
+  position: relative;
+  max-width: 22.3%;
+  background-color: black;
+}
+
+.square-image::before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.square-image img{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: contain;
+}
